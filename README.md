@@ -1,5 +1,34 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# E-Commerce Template
+ A Nextjs Authentication Reference Project
+## Structure
+-[ ] Firebase Authentication
+-[x] NEXT.js React 
+-[ ] Stripe Payment Processing
+
+## Benefits
+-[ ] Server Side Rendering with NEXT.js
+    - [ ] SEO by Fully rendering for bots, while being highly reactive for users
+-[ ] Google Analytics Integration
+-[ ] Free for relatively large volume of users
+-[ ] Github version control
+    -[ ] Github Hooks CI/CD
+-[ ] Prevents Cumulative Layout Shift automatically through next/image
+-[ ] On demand image resizing
+
+## Styling
+-[ ] JSDocs
+-[ ] Prettier
+-[ ] ESLint
+-[x] TypeScript - javascripts better half
+
+## Points of Improvements
+- Firebase Emulator Suite 
+- Jest Integrated Testing
+- 🧠 Remix : How to change SSG/SSR based on edge server cases 🧠
+
+
 ## Getting Started
 
 First, run the development server:

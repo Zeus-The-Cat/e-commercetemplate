@@ -1,0 +1,99 @@
+@use 'boxshadow'
+html,
+body 
+  padding: 0
+  margin: 0
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+  background: var(--color-bg)
+  font-size: clamp(75%,.8rem + .25vw,120%)
+
+
+a 
+  color:  inherit
+  text-decoration:  none
+
+
+* 
+  box-sizing:  border-box
+
+:root
+  --color-bg:  #F2F4F3
+  --color-titanium-yellow:  #f0e100
+  --color-aubergine:  #542840
+  --color-midnight-green:  #0b3c49
+  --color-grullo:  #A9927D
+  /* buttons (+6 pressed) & cards*/
+  // --2dp:  0 3px 6px rgba(0, 0, 0, 0.16),
+  // 0 3px 6px rgba(0, 0, 0, 0.23)
+  // /* refresh indicator */
+  // --3dp:   0 3px 4px 0px rgba(0, 0, 0, 0.20),
+  //         0 3px 3px -2px rgba(0, 0, 0, 0.14),
+  //         0 1px 8px 0px rgba(0, 0, 0, 0.12)
+  // /* nav bar */
+  // --4dp:   0 10px 20px rgba(0, 0, 0, 0.19),
+  //         0 6px 6px rgba(0, 0, 0, 0.23)
+  // /* snackbar & FAB(+6 pressed) */
+  // --6dp:   0 14px 28px rgba(0, 0, 0, 0.25),
+  //         0 10px 10px rgba(0, 0, 0, 0.22)
+  // /* Menu (+1 per submenu) */
+  // --8dp:   0 8px 10px 1px rgba(0, 0, 0, 0.20),
+  //         0 3px 14px 2px rgba(0, 0, 0, 0.14),
+  //         0 5px 5px -1px rgba(0, 0, 0, 0.12)
+
+button
+  border: none
+  font-size: 1.0rem
+  padding: 5px
+  box-shadow: boxshadow.$dp2
+  transition:  all 0.3s cubic-bezier(.25,.8,.25,1)
+
+button:hover
+  cursor: pointer
+  box-shadow: boxshadow.$dp8
+  background: var(--color-midnight-green)
+  color: white
+
+.flexColumn
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.username-card
+  margin: 20px
+  display: flex
+  justify-content: center
+
+.username-card > *
+  background: #fefefe
+  box-shadow: boxshadow.$dp4
+  border-radius: 20px
+  padding: 20px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+/* Loading Spinner */
+.loader-container
+  box-shadow: boxshadow.$dp6
+  border-radius: 50%
+  background: white
+  width: 50px
+  height: 50px
+  margin: 5px
+
+.loader 
+  border:  10px solid var(--color-bg)
+  border-top:  10px solid var(--color-grullo)
+  border-radius:  50%
+  width:  50px
+  height:  50px
+  animation:  spin 1s linear infinite
+
+@keyframes spin 
+  0%  
+    transform:  rotate(0deg) 
+  100% 
+    transform:  rotate(360deg) 

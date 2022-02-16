@@ -1,0 +1,35 @@
+@use 'boxshadow'
+.box
+    background: red
+    width: 100px
+    height: 100px
+    margin: 5px
+.box0,.box1,.box2,.box3,.box4
+    margin: 5px
+.alertContainer
+    position: relative
+    height:100px
+    .alertBar
+        position: absolute
+        width: 100vw
+        height: 100px
+        z-index: 2
+        background: var(--color-midnight-green)
+        box-shadow: boxshadow.$dp2
+    .alert
+        position: absolute
+        height: 90px
+        width: 150px
+        border-radius: 10px
+        background: var(--color-bg)
+        border: 2px solid var(--color-titanium-yellow)
+        left: 50vw
+        bottom: 100
+        z-index: 1
+        box-shadow: boxshadow.$dp4
+        padding:5px
+        writing-mode: vertical-rl
+        text-align: center
+        text-orientation: sideways
+        span
+            font-size: 0.80rem

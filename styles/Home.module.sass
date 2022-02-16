@@ -1,0 +1,30 @@
+@use 'boxshadow'
+
+.toasterBtn
+    padding: 8px
+    font-size: 0.8rem
+    font-weight: 400
+    color: var(--color-grullo)
+    margin: 5px
+    border: none
+    border-radius: 5px
+    &:hover
+        color: var(--color-midnight-green)
+        background: var(--color-bg)
+
+.card
+    margin: 20px
+    border-radius: 10px
+
+.cardInfo
+    box-shadow: boxshadow.$dp2
+    padding: 5px 20px 10px 20px
+    h2
+        text-align: center
+
+.viewMore
+    display: flex
+    justify-content: center
+    .endText
+        padding: 10px
+        opacity: 0.6

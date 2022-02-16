@@ -1,0 +1,26 @@
+@use 'boxshadow'
+.card
+    margin-top: 20px
+    box-shadow: boxshadow.$dp4
+    padding: 20px
+    border-radius: 10px
+    a
+        &:hover
+            color: var(--color-midnight-green)
+            cursor: pointer
+    h2
+        margin: 0
+        margin-bottom: 0.25rem
+        &:hover
+            cursor: pointer
+    footer
+        padding-top: 0.25rem
+        display: flex
+        justify-content: space-between
+
+.liveFormatting
+    display: flex
+    justify-content: flex-start
+    align-items: center 
+    >button
+        margin-right: 5px
